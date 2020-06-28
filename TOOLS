@@ -1,0 +1,113 @@
+#!bin/bash
+
+#VARIAVEIS
+clear="\033[0m"
+vermelho="\033[0;31m"
+verde="\033[0;32m"
+ciano="\033[1;36m"
+amarelo="\033[1;33m"
+
+while :; do
+
+#MENU
+
+clear
+    echo -e "$amarelo"
+echo "
+X==============================================X
+╔╦╗╔═╗╔═╗╦  ╔═╗  ╔═╗╔═╗╦═╗  ╔╦╗╔═╗╦═╗╔╦╗╦ ╦═╗ ╦
+ ║ ║ ║║ ║║  ╚═╗  ╠╣ ║ ║╠╦╝   ║ ║╣ ╠╦╝║║║║ ║╔╩╦╝
+ ╩ ╚═╝╚═╝╩═╝╚═╝  ╚  ╚═╝╩╚═   ╩ ╚═╝╩╚═╩ ╩╚═╝╩ ╚═
+X==============================================X
+"
+echo -e "\e[1;32mV= 1.0 (Beta)\e[1;36m  Por Kauazin SSH\033[0m"
+echo ""
+    echo -e "\033[0;32m
+[1] => Instalar Script para mudar Interface
+[2] => Instalar Script para acessar VPS
+[3] => Instalar Script ØLÏVEÏRÆ
+[4] => Instalar Script Speed Test
+[5] => Como usar cada Script
+[0] => Sair do Script
+\033[0m"
+echo ""
+echo -e "\e[1;33mO que você deseja fazer?"
+echo ""
+echo -n "Digite o número da opção: "
+read resp
+sleep 1
+clear
+    case "$resp" in
+
+#OPÇOES
+
+    1)
+echo -e "\033[0;32mInstalando TStyling \033[0m"
+echo ""
+sleep 2
+   apt update && apt upgrade -y; pkg install git -y; git clone https://github.com/darkwarrior3/tstyling
+clear
+echo -e "\033[0;32mInstalação Concluida com sucesso! \033[0m"
+sleep 3
+clear
+;;
+    2)
+echo -e "\033[0;32mInstalando OpenSSH \033[0m"
+echo ""
+sleep 2
+   apt update && apt upgrade -y; pkg install openssh -y
+clear
+echo -e "\033[0;32mInstalação Concluida com sucesso! \033[0m"
+sleep 3
+clear
+;;
+    3)
+echo -e "\033[0;32mInstalando Script ØLÏVEÏRÆ \033[0m"
+echo ""
+  termux-setup-storage -y; pkg install curl -y; pkg install wget -y; pkg install nano -y;apt update && apt upgrade -y; pkg install git; git clone https://github.com/Oliveirae/BUSCAR-HOST-V2.git
+clear
+echo -e "\033[0;32mInstalação Concluida com sucesso! \033[0m"
+sleep 3
+clear
+;;
+     4)
+echo -e "\033[0;32mInstalando Script Speed Test \033[0m"
+echo ""
+   apt update && apt upgrade -y; pkg install nodejs -y; npm install --global speed-test
+clear
+echo -e "\033[0;32mInstalação Concluida com sucesso! \033[0m"
+sleep 3
+clear
+;;
+    5)
+echo ""
+echo -e "\033[0;32m MENU DE AJUDA \033[0m"
+echo ""
+echo ""
+echo -e "[1] - Script OpenSSH: Para usar este Script você só precisa digitar, ssh root@IPDAVPS -y após digitar isso dê ENTER então ele vai pedir a senha então basta digitar e dar ENTER novamente"
+echo ""
+echo -e "[2] - Script TStyling: Para modificar a interface com esse Script basta instala-lo e após isso entrar no diretório padrão (cd \$HOME) digitar: cd tstyling; chmod +x *;./setup.sh para finalizar a instalação"
+echo -e "[3] - Script ØLÏVEÏRÆ: Para usar este Script basta executar o comando: cd BUSCAR-HOST-V2; bash BUSCADOR.sh no diretório padrão (cd \$HOME)"
+echo ""
+echo -e "[4] - Script Speed Test Para usar este Script basta executar o comando: Speed-test no diretório padrão (cd \$HOME)"                                                     echo ""
+echo ""
+echo -e "\033[0;31m Para sair do menu de ENTER \033[0m"
+echo ""
+read sair
+echo -e "$vermelho Saindo...$clear"
+sleep 2
+clear
+;;
+   0)
+echo -e "$vermelho Saindo do Script$clear"
+sleep 2
+clear
+    exit
+;;
+  *)
+clear
+echo "$vermelho COMANDO INVÁLIDO"
+;;
+
+esac
+done
