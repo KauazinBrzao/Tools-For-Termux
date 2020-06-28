@@ -21,4 +21,4 @@ bash TOOLS
 
 Obrigado por usá-lo, ele foi criado com intuito de Ajudar!
 
-Meu contato no Telegram: t.me/K_Straesser
+Meu contato no Telegram: https://t.me/K_Straesser
