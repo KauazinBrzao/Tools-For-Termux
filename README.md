@@ -3,6 +3,7 @@
 Para instalar o Script basta você fazer os seguintes comandos no terminal:
 
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+
 apt update && apt upgrade
 
 pkg install git
@@ -13,6 +14,7 @@ cd Tools-For-Termux
 
 bash TOOLS
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+
 Para entrar novamente basta usar
 
 cd Tools-For-Termux
