@@ -17,3 +17,8 @@ Para entrar novamente basta usar
 cd Tools-For-Termux
 
 bash TOOLS
+
+
+Obrigado por usá-lo, ele foi criado com intuito de Ajudar!
+
+Meu contato no Telegram: t.me/K_Straesser
