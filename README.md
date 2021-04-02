@@ -22,6 +22,4 @@ cd Tools-For-Termux
 bash TOOLS
 =+=+=+=+=+=++=+=+=+=+=+=+=+=+=+=+=+=+=
 
-Obrigado por usá-lo, ele foi criado com intuito de Ajudar!
-
-Meu contato no Telegram: https://t.me/K_Straesser
+Obrigado por usá-lo, ele foi criado com intuito de Ajudar
